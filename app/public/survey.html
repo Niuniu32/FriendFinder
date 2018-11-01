@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Reservation at Hot Restaurant</title>
-    <!-- Latest compiled and minified CSS & JS -->
+    <title>Your still here?</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="views/css/style/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
 </head>
 
 <body>
@@ -28,31 +29,194 @@
             <h4>
                 Photos about yourself to steel your ID (LOL)
             </h4>
-            <input type="text" id="name" class="form-control">
-            <hr>
-            <h3><strong>
-                Question 1:
-            </strong></h3>
-            <h4>
+            <input type="text" id="link" class="form-control">
+            <form id="question">
+                <hr>
+                <h3><strong> Question 1: </strong></h3>
+                <h4>
                     Your mind is always buzzing with unexplored ideas and plans.
-            </h4>
-            <select class="chosen-select chosen-select" id="1q" style="display:none">
-                <option value></option>
-                <option value="1">1.Full of ideas</option>
-                <option value="2">2.Some ideas</option>
-                <option value="3">3.A little idea</option>
-                <option value="4">4.Almost no idea</option>
-                <option value="5">5.No idea</option>
-            </select>
-        </div>
+                </h4>
 
-        <footer class="footer">
-            <div class="container">
-                <a href="http://localhost:3000/reservation">API Table Link</a>
-                <a href="http://localhost:3000/waitlist">API Waiting Link</a>
+                <!-- First Q -->
+                <select class="chosen-select form-group" id="1">
+                    <option value></option>
+                    <option value="1">1.Full of ideas</option>
+                    <option value="2">2.Some ideas</option>
+                    <option value="3">3.A little idea</option>
+                    <option value="4">4.Almost no idea</option>
+                    <option value="5">5.No idea</option>
+                </select>
+                <!-- Second Q -->
+                <h3><strong> Question 2: </strong></h3>
+                <h4>
+                    Generally speaking,you rely more on your experience than your imagination
+                </h4>
+
+                <select class="chosen-select " id="1">
+                    <option value></option>
+                    <option value="1">1.100% Experience</option>
+                    <option value="2">2.75% Experience 25% imagination</option>
+                    <option value="3">3.50%/50%</option>
+                    <option value="4">4.25% Experience 75% imagination</option>
+                    <option value="5">5.100% Experience</option>
+                </select>
+                <!-- Third Q -->
+                <h3><strong> Question 3: </strong></h3>
+                <h4>
+                    You find it easy to stay relaxed and focused even when there is some pressure
+                </h4>
+
+                <select class="chosen-select" id="1">
+                    <option value></option>
+                    <option value="1">1.Yes(How teach me)</option>
+                    <option value="2">2.Somewhat</option>
+                    <option value="3">3.less than Somewhat</option>
+                    <option value="4">4.Maybe</option>
+                    <option value="5">5.No</option>
+                </select>
+                <!-- Forth Q -->
+                <h3><strong> Question 4: </strong></h3>
+                <h4>
+                    You Rarely do something just out of sheer curiosity
+                </h4>
+
+                <select class="chosen-select" id="1">
+                    <option value></option>
+                    <option value="1">1.Yes</option>
+                    <option value="2">2.Somewhat</option>
+                    <option value="3">3.Maybe</option>
+                    <option value="4">4.Maybe-not</option>
+                    <option value="5">5.No</option>
+                </select>
+                <!-- Fifth Q -->
+                <h3><strong> Question 5: </strong></h3>
+                <h4>
+                    It is often difficult for you to relate to ther people's feelings
+                </h4>
+
+                <select class="chosen-select" id="1">
+                    <option value></option>
+                    <option value="1">1.Yes(i don't blame you,humans are complitcated)</option>
+                    <option value="2">2.Somewhat</option>
+                    <option value="3">3.Maybe</option>
+                    <option value="4">4.Maybe-not</option>
+                    <option value="5">5.No(Teach me please)</option>
+                </select>
+                <!-- Sixth Q -->
+                <h3><strong> Question 6: </strong></h3>
+                <h4>
+                    Peaple can rarely upset you
+                </h4>
+                <select class="chosen-select" id="1">
+                    <option value></option>
+                    <option value="1">1.Yes(Stone cold)</option>
+                    <option value="2">2.Somewhat(Stone Hot)</option>
+                    <option value="3">3.Maybe(Small Fire)</option>
+                    <option value="4">4.Maybe-not(Big Fire)</option>
+                    <option value="5">5.No (Chill out)</option>
+                </select>
+                <!-- Seventh Q -->
+                <h3><strong> Question 7: </strong></h3>
+                <h4>
+                    In a discussion,truth should be more important than people's sensitivites
+                </h4>
+                <select class="chosen-select" id="1">
+                    <option value></option>
+                    <option value="1">1.Yes</option>
+                    <option value="2">2.Somewhat</option>
+                    <option value="3">3.Maybe</option>
+                    <option value="4">4.Maybe-not</option>
+                    <option value="5">5.No</option>
+                </select>
+                <!-- Eightth Q -->
+                <h3><strong> Question 8: </strong></h3>
+                <h4>
+                    You rarely get carried away by fantasies and ideas
+                </h4>
+                <select class="chosen-select" id="1">
+                    <option value></option>
+                    <option value="1">1.Yes</option>
+                    <option value="2">2.Somewhat</option>
+                    <option value="3">3.Maybe</option>
+                    <option value="4">4.Maybe-not</option>
+                    <option value="5">5.No</option>
+                </select>
+                <!-- Ninth Q -->
+                <h3><strong> Question 9: </strong></h3>
+                <h4>
+                    You think that everyone's view should be respected regardless of whether they are supported by
+                    facts or
+                    not
+                </h4>
+                <select class="chosen-select" id="1">
+                    <option value></option>
+                    <option value="1">1.Yes</option>
+                    <option value="2">2.Somewhat</option>
+                    <option value="3">3.Maybe</option>
+                    <option value="4">4.Maybe-not</option>
+                    <option value="5">5.No</option>
+                </select>
+                <!-- Tenth Q -->
+                <h3><strong> Question 10: </strong></h3>
+                <h4>
+                    You feel more energentic after spending time with a group of people
+                </h4>
+                <select class="chosen-select" id="1">
+                    <option value></option>
+                    <option value="1">1.Yes</option>
+                    <option value="2">2.Somewhat</option>
+                    <option value="3">3.Maybe</option>
+                    <option value="4">4.Maybe-not</option>
+                    <option value="5">5.No</option>
+                </select>
+                <button type="button" class="btn btn-primary" id="submit">submit</button>
+            </form>
+            <div id="matched">
+                <h1 id="Name"></h1>
+                < <img src="" id="Photo" class="img-fluid" alt="Responsive image">
+
+
             </div>
-        </footer>
+            <footer class="footer">
+                <div class="container">
+                    <a href="http://localhost:3000/reservation">API Table Link</a>
+                    <a href="http://localhost:3000/waitlist">API Waiting Link</a>
+                </div>
+            </footer>
+            <script type="text/javascript">
+                var config = {
+                    ".chosen-select": {},
+                    ".chosen-select-deselect": {
+                        allow_single_deselect: true
+                    },
+                    ".chosen-select-no-single": {
+                        disable_search_threshold: 10
+                    },
+                    ".chosen-select-no-results": {
+                        no_results_text: "Oops, nothing found!"
+                    },
+                    ".chosen-select-width": {
+                        width: "90%"
+                    }
+                };
 
+                for (var selector in config) {
+                    $(selector).chosen(config[selector]);
+                }
+                $("#submit").click(function (e) {
+                    event.preventDefault()
+                    var values = $("#question").serializeArray();
+
+                    $.ajax({
+                        url: "/api/friend",
+                        method: "POST",
+                        data: values
+                    }).then(function (res) {
+                        $("#Name").text(res.friendName)
+                        $("#Photo").attr("src", res.photoLink)
+                    })
+                })
+            </script>
 </body>
 
 </html>
